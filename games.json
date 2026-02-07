@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "description": "Join the numbers and get to the 2048 tile!",
+    "category": "Puzzle",
+    "thumbnail": "https://picsum.photos/seed/2048/400/250",
+    "iframeUrl": "https://play2048.co/",
+    "featured": true
+  },
+  {
+    "id": "tetris",
+    "title": "Retro Tetris",
+    "description": "The classic block-stacking puzzle game.",
+    "category": "Arcade",
+    "thumbnail": "https://picsum.photos/seed/tetris/400/250",
+    "iframeUrl": "https://tetris.com/play-tetris",
+    "featured": true
+  },
+  {
+    "id": "slope",
+    "title": "Slope",
+    "description": "Drive your ball down a steep slope while avoiding obstacles.",
+    "category": "Action",
+    "thumbnail": "https://picsum.photos/seed/slope/400/250",
+    "iframeUrl": "https://slope-game.github.io/"
+  },
+  {
+    "id": "chess",
+    "title": "Grandmaster Chess",
+    "description": "The ultimate game of strategy and intelligence.",
+    "category": "Strategy",
+    "thumbnail": "https://picsum.photos/seed/chess/400/250",
+    "iframeUrl": "https://www.chess.com/play/online"
+  },
+  {
+    "id": "dino",
+    "title": "Chrome Dino Run",
+    "description": "The famous offline dinosaur game.",
+    "category": "Arcade",
+    "thumbnail": "https://picsum.photos/seed/dino/400/250",
+    "iframeUrl": "https://chromedino.com/"
+  },
+  {
+    "id": "sudoku",
+    "title": "Sudoku Daily",
+    "description": "Train your brain with daily logic puzzles.",
+    "category": "Puzzle",
+    "thumbnail": "https://picsum.photos/seed/sudoku/400/250",
+    "iframeUrl": "https://sudoku.com/"
+  }
+]
