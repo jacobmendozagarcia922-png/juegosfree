@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Game } from '../types';
+import { Game } from '../types.ts';
 
 interface GameCardProps {
   game: Game;

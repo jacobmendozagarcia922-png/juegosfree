@@ -1,20 +1,18 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
-import Header from './components/Header';
-import GameCard from './components/GameCard';
-import GamePlayer from './components/GamePlayer';
-import { Game, GameCategory } from './types';
+import Header from './components/Header.tsx';
+import GameCard from './components/GameCard.tsx';
+import GamePlayer from './components/GamePlayer.tsx';
+import { Game, GameCategory, GameCategoryType } from './types.ts';
 
 const App: React.FC = () => {
   const [games, setGames] = useState<Game[]>([]);
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState<GameCategory>(GameCategory.ALL);
+  const [activeCategory, setActiveCategory] = useState<GameCategoryType>(GameCategory.ALL);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Fetching the JSON file instead of importing it as a module
-    // to avoid cross-browser compatibility issues with JSON modules.
     const loadGames = async () => {
       try {
         setIsLoading(true);
@@ -94,7 +92,6 @@ const App: React.FC = () => {
           </div>
         ) : (
           <>
-            {/* Featured Section (only shown on home/no search) */}
             {!searchQuery && activeCategory === GameCategory.ALL && featuredGames.length > 0 && (
               <section className="mb-12">
                 <div className="flex items-center gap-2 mb-6">
@@ -121,7 +118,6 @@ const App: React.FC = () => {
               </section>
             )}
 
-            {/* All Games Grid */}
             <section>
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-2">
@@ -198,7 +194,6 @@ const App: React.FC = () => {
         </div>
       </footer>
 
-      {/* Game Player Modal */}
       {selectedGame && (
         <GamePlayer game={selectedGame} onClose={handleCloseGame} />
       )}

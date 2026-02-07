@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Game } from '../types';
+import { Game } from '../types.ts';
 
 interface GamePlayerProps {
   game: Game;
@@ -11,7 +11,7 @@ const GamePlayer: React.FC<GamePlayerProps> = ({ game, onClose }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = () => {
-    const iframe = document.getElementById('game-frame');
+    const iframe = document.getElementById('game-frame') as HTMLIFrameElement;
     if (!iframe) return;
 
     if (!isFullscreen) {
